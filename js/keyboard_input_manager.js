@@ -47,6 +47,13 @@ KeyboardInputManager.prototype.listen = function () {
     68: 1, // D
     83: 2, // S
     65: 3  // A
+      ,
+    77: 0, // 2
+    16: 1, // 6
+    18: 2, // 8
+    46: 3, // 4
+    62: 3  // 4
+
   };
 
   // Respond to direction keys
@@ -55,12 +62,10 @@ KeyboardInputManager.prototype.listen = function () {
                     event.shiftKey;
     var mapped    = map[event.which];
 
-    if (!modifiers) {
       if (mapped !== undefined) {
         event.preventDefault();
         self.emit("move", mapped);
       }
-    }
 
     // R key restarts the game
     if (!modifiers && event.which === 82) {
