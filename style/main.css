@@ -12,9 +12,11 @@ html, body {
   display: block;
   clear: both; }
 
+/*
 .heading, .above-game, .game-explanation, hr, p {
   display:none;
 }
+*/
 h1.title {
   font-size: 80px;
   font-weight: bold;
@@ -30,6 +32,7 @@ h1.title {
   100% {
     top: -50px;
     opacity: 0; } }
+
 @-moz-keyframes move-up {
   0% {
     top: 25px;
@@ -38,6 +41,7 @@ h1.title {
   100% {
     top: -50px;
     opacity: 0; } }
+
 @keyframes move-up {
   0% {
     top: 25px;
@@ -116,7 +120,8 @@ hr {
   margin-bottom: 30px; }
 
 .container {
-  width: 500px;
+  width: 800px;
+  height: 480px;
   margin: 0 auto; }
 
 @-webkit-keyframes fade-in {
@@ -139,6 +144,10 @@ hr {
     opacity: 1; } }
 .game-container {
   position: relative;
+  top: 25%;
+  left: 50%;
+  margin-left: -132px;
+  margin-top: -66px;
   padding: 15px;
   cursor: default;
   -webkit-touch-callout: none;
@@ -150,8 +159,8 @@ hr {
   touch-action: none;
   background: #bbada0;
   border-radius: 6px;
-  width: 500px;
-  height: 500px;
+  width: 265px;
+  height: 265px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -205,7 +214,7 @@ hr {
   z-index: 1; }
 
 .grid-row {
-  margin-bottom: 15px; }
+  margin-bottom: 7px; }
   .grid-row:last-child {
     margin-bottom: 0; }
   .grid-row:after {
@@ -214,9 +223,9 @@ hr {
     clear: both; }
 
 .grid-cell {
-  width: 106.25px;
-  height: 106.25px;
-  margin-right: 15px;
+  width: 53px;
+  height: 53px;
+  margin-right: 7px;
   float: left;
   border-radius: 3px;
   background: rgba(238, 228, 218, 0.35); }
@@ -228,89 +237,89 @@ hr {
   z-index: 2; }
 
 .tile, .tile .tile-inner {
-  width: 107px;
-  height: 107px;
-  line-height: 107px; }
+  width: 53px;
+  height: 53px;
+  line-height: 53px; }
 .tile.tile-position-1-1 {
   -webkit-transform: translate(0px, 0px);
   -moz-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
   transform: translate(0px, 0px); }
 .tile.tile-position-1-2 {
-  -webkit-transform: translate(0px, 121px);
-  -moz-transform: translate(0px, 121px);
-  -ms-transform: translate(0px, 121px);
-  transform: translate(0px, 121px); }
+  -webkit-transform: translate(0px, 60px);
+  -moz-transform: translate(0px, 60px);
+  -ms-transform: translate(0px, 60px);
+  transform: translate(0px, 60px); }
 .tile.tile-position-1-3 {
-  -webkit-transform: translate(0px, 242px);
-  -moz-transform: translate(0px, 242px);
-  -ms-transform: translate(0px, 242px);
-  transform: translate(0px, 242px); }
+  -webkit-transform: translate(0px, 120px);
+  -moz-transform: translate(0px, 120px);
+  -ms-transform: translate(0px, 120px);
+  transform: translate(0px, 120px); }
 .tile.tile-position-1-4 {
-  -webkit-transform: translate(0px, 363px);
-  -moz-transform: translate(0px, 363px);
-  -ms-transform: translate(0px, 363px);
-  transform: translate(0px, 363px); }
+  -webkit-transform: translate(0px, 180px);
+  -moz-transform: translate(0px, 180px);
+  -ms-transform: translate(0px, 180px);
+  transform: translate(0px, 180px); }
 .tile.tile-position-2-1 {
-  -webkit-transform: translate(121px, 0px);
-  -moz-transform: translate(121px, 0px);
-  -ms-transform: translate(121px, 0px);
-  transform: translate(121px, 0px); }
+  -webkit-transform: translate(60px, 0px);
+  -moz-transform: translate(60px, 0px);
+  -ms-transform: translate(60px, 0px);
+  transform: translate(60px, 0px); }
 .tile.tile-position-2-2 {
-  -webkit-transform: translate(121px, 121px);
-  -moz-transform: translate(121px, 121px);
-  -ms-transform: translate(121px, 121px);
-  transform: translate(121px, 121px); }
+  -webkit-transform: translate(60px, 60px);
+  -moz-transform: translate(60px, 60px);
+  -ms-transform: translate(60px, 60px);
+  transform: translate(60px, 60px); }
 .tile.tile-position-2-3 {
-  -webkit-transform: translate(121px, 242px);
-  -moz-transform: translate(121px, 242px);
-  -ms-transform: translate(121px, 242px);
-  transform: translate(121px, 242px); }
+  -webkit-transform: translate(60px, 120px);
+  -moz-transform: translate(60px, 120px);
+  -ms-transform: translate(60px, 120px);
+  transform: translate(60px, 120px); }
 .tile.tile-position-2-4 {
-  -webkit-transform: translate(121px, 363px);
-  -moz-transform: translate(121px, 363px);
-  -ms-transform: translate(121px, 363px);
-  transform: translate(121px, 363px); }
+  -webkit-transform: translate(60px, 180px);
+  -moz-transform: translate(60px, 180px);
+  -ms-transform: translate(60px, 180px);
+  transform: translate(60px, 180px); }
 .tile.tile-position-3-1 {
-  -webkit-transform: translate(242px, 0px);
-  -moz-transform: translate(242px, 0px);
-  -ms-transform: translate(242px, 0px);
-  transform: translate(242px, 0px); }
+  -webkit-transform: translate(120px, 0px);
+  -moz-transform: translate(120px, 0px);
+  -ms-transform: translate(120px, 0px);
+  transform: translate(120px, 0px); }
 .tile.tile-position-3-2 {
-  -webkit-transform: translate(242px, 121px);
-  -moz-transform: translate(242px, 121px);
-  -ms-transform: translate(242px, 121px);
-  transform: translate(242px, 121px); }
+  -webkit-transform: translate(120px, 60px);
+  -moz-transform: translate(120px, 60px);
+  -ms-transform: translate(120px, 60px);
+  transform: translate(120px, 60px); }
 .tile.tile-position-3-3 {
-  -webkit-transform: translate(242px, 242px);
-  -moz-transform: translate(242px, 242px);
-  -ms-transform: translate(242px, 242px);
-  transform: translate(242px, 242px); }
+  -webkit-transform: translate(120px, 120px);
+  -moz-transform: translate(120px, 120px);
+  -ms-transform: translate(120px, 120px);
+  transform: translate(120px, 120px); }
 .tile.tile-position-3-4 {
-  -webkit-transform: translate(242px, 363px);
-  -moz-transform: translate(242px, 363px);
-  -ms-transform: translate(242px, 363px);
-  transform: translate(242px, 363px); }
+  -webkit-transform: translate(120px, 180px);
+  -moz-transform: translate(120px, 180px);
+  -ms-transform: translate(120px, 180px);
+  transform: translate(120px, 180px); }
 .tile.tile-position-4-1 {
-  -webkit-transform: translate(363px, 0px);
-  -moz-transform: translate(363px, 0px);
-  -ms-transform: translate(363px, 0px);
-  transform: translate(363px, 0px); }
+  -webkit-transform: translate(180px, 0px);
+  -moz-transform: translate(180px, 0px);
+  -ms-transform: translate(180px, 0px);
+  transform: translate(180px, 0px); }
 .tile.tile-position-4-2 {
-  -webkit-transform: translate(363px, 121px);
-  -moz-transform: translate(363px, 121px);
-  -ms-transform: translate(363px, 121px);
-  transform: translate(363px, 121px); }
+  -webkit-transform: translate(180px, 60px);
+  -moz-transform: translate(180px, 60px);
+  -ms-transform: translate(180px, 60px);
+  transform: translate(180px, 60px); }
 .tile.tile-position-4-3 {
-  -webkit-transform: translate(363px, 242px);
-  -moz-transform: translate(363px, 242px);
-  -ms-transform: translate(363px, 242px);
-  transform: translate(363px, 242px); }
+  -webkit-transform: translate(180px, 120px);
+  -moz-transform: translate(180px, 120px);
+  -ms-transform: translate(180px, 120px);
+  transform: translate(180px, 120px); }
 .tile.tile-position-4-4 {
-  -webkit-transform: translate(363px, 363px);
-  -moz-transform: translate(363px, 363px);
-  -ms-transform: translate(363px, 363px);
-  transform: translate(363px, 363px); }
+  -webkit-transform: translate(180px, 180px);
+  -moz-transform: translate(180px, 180px);
+  -ms-transform: translate(180px, 180px);
+  transform: translate(180px, 180px); }
 
 .tile {
   position: absolute;
@@ -326,7 +335,7 @@ hr {
     text-align: center;
     font-weight: bold;
     z-index: 10;
-    font-size: 55px; }
+    font-size: 26px; }
   .tile.tile-2 .tile-inner {
     background: #eee4da;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
@@ -349,7 +358,7 @@ hr {
     color: #f9f6f2;
     background: #edcf72;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
-    font-size: 45px; }
+    font-size: 26px; }
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
@@ -357,7 +366,7 @@ hr {
     color: #f9f6f2;
     background: #edcc61;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
-    font-size: 45px; }
+    font-size: 26px; }
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
         font-size: 25px; } }
@@ -365,7 +374,7 @@ hr {
     color: #f9f6f2;
     background: #edc850;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
-    font-size: 45px; }
+    font-size: 26px; }
     @media screen and (max-width: 520px) {
       .tile.tile-512 .tile-inner {
         font-size: 25px; } }
@@ -373,7 +382,7 @@ hr {
     color: #f9f6f2;
     background: #edc53f;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
-    font-size: 35px; }
+    font-size: 17px; }
     @media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-inner {
         font-size: 15px; } }
@@ -381,7 +390,7 @@ hr {
     color: #f9f6f2;
     background: #edc22e;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 35px; }
+    font-size: 17px; }
     @media screen and (max-width: 520px) {
       .tile.tile-2048 .tile-inner {
         font-size: 15px; } }
@@ -512,9 +521,11 @@ hr {
   clear: both; }
 
 .game-intro {
-  float: left;
+  /*float: left;*/
   line-height: 42px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-left: 20px;
+}
 
 .restart-button {
   display: inline-block;
@@ -530,7 +541,12 @@ hr {
   float: right; }
 
 .game-explanation {
-  margin-top: 50px; }
+  position: absolute;
+  top: 50%;
+  margin-top: 5px;
+  marging-left: 40px;
+  width: 25%;
+}
 
 @media screen and (max-width: 520px) {
   html, body {
@@ -545,7 +561,7 @@ hr {
     margin-top: 15px; }
 
   .container {
-    width: 280px;
+    width: 260px;
     margin: 0 auto; }
 
   .score-container, .best-container {
@@ -583,8 +599,8 @@ hr {
     touch-action: none;
     background: #bbada0;
     border-radius: 6px;
-    width: 280px;
-    height: 280px;
+    width: 260px;
+    height: 260px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
@@ -647,8 +663,8 @@ hr {
       clear: both; }
 
   .grid-cell {
-    width: 57.5px;
-    height: 57.5px;
+    width: 57px;
+    height: 57px;
     margin-right: 10px;
     float: left;
     border-radius: 3px;
